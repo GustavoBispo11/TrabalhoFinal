@@ -77,6 +77,7 @@ section {
     float: right;
     margin-bottom: 0px;
 background-color: #343a40;
+color: white;	
 
 }
 
@@ -144,3 +145,7 @@ img :hover
 body{ 
 background-color: #343a40;
 }	
+.icone{
+max-width: 300px;
+margin: auto;
+}
