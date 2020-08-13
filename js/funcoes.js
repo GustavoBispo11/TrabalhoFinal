@@ -55,3 +55,22 @@ $(document).ready(function () {
         $('#wrapper').toggleClass('toggled');
   });  
 });
+
+function Opacidade(id){
+document.getElementById(id).style.opacity = 1;
+}
+function Opacidade1(id){
+document.getElementById(id).style.opacity = 0.6;
+}
+
+
+function validaEmail()
+{
+  var obj = eval("document.forms[0].Email");
+  var txt = obj.value;
+  if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7)))
+  {
+    alert('Email inválido');
+    obj.focus();
+  }
+}

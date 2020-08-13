@@ -8,14 +8,15 @@
 <link rel="icon" 
       type="image/png" 
       href="img/sonic-logo2.png" />
-</head>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</head>
+  <script src="js/funcoes.js"></script>
+
 </head>
 <body onload="setarAba()">
 <header>
@@ -78,13 +79,16 @@
 <br>
 <div class="row">
 <div class="col-sm-4">
-<a href="https://meiobit.com/wp-content/uploads/2020/01/20200129dragon-ball-z-kakarot-3.jpg"><img src="https://meiobit.com/wp-content/uploads/2020/01/20200129dragon-ball-z-kakarot-3.jpg" class="icone" >
+<a href="https://meiobit.com/wp-content/uploads/2020/01/20200129dragon-ball-z-kakarot-3.jpg">
+<img  id="opaco" onmouseleave="Opacidade('opaco')" onmouseenter="Opacidade1('opaco')" src="https://meiobit.com/wp-content/uploads/2020/01/20200129dragon-ball-z-kakarot-3.jpg" class="icone" >
 </div>
 <div class="col-sm-4">
-<a href="https://store-images.s-microsoft.com/image/apps.47826.14604829707397503.850de472-a7ab-4cfe-8da1-e593a19ff4d7.597c9186-4eb9-44bb-af26-906fb12b8397?mode=scale&q=90&h=720&w=1280&format=jpg"><img src="https://store-images.s-microsoft.com/image/apps.47826.14604829707397503.850de472-a7ab-4cfe-8da1-e593a19ff4d7.597c9186-4eb9-44bb-af26-906fb12b8397?mode=scale&q=90&h=720&w=1280&format=jpg" class="icone">
+<a href="https://store-images.s-microsoft.com/image/apps.47826.14604829707397503.850de472-a7ab-4cfe-8da1-e593a19ff4d7.597c9186-4eb9-44bb-af26-906fb12b8397?mode=scale&q=90&h=720&w=1280&format=jpg">
+<img id="opaco1" onmouseleave="Opacidade('opaco1')" onmouseenter="Opacidade1('opaco1')" src="https://store-images.s-microsoft.com/image/apps.47826.14604829707397503.850de472-a7ab-4cfe-8da1-e593a19ff4d7.597c9186-4eb9-44bb-af26-906fb12b8397?mode=scale&q=90&h=720&w=1280&format=jpg" class="icone">
 </div>
 <div class="col-sm-4">
-<a href="https://s2.glbimg.com/-XjvDP2oKIEio-rPzmG7kGECm1Q=/0x0:695x390/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/q/c/BfBdLTT9ijNB83uJ3zIw/dragon-ball-z-kakarot-2-milhoes-vendas.jpg"><img src="https://s2.glbimg.com/-XjvDP2oKIEio-rPzmG7kGECm1Q=/0x0:695x390/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/q/c/BfBdLTT9ijNB83uJ3zIw/dragon-ball-z-kakarot-2-milhoes-vendas.jpg" class="icone">
+<a href="https://s2.glbimg.com/-XjvDP2oKIEio-rPzmG7kGECm1Q=/0x0:695x390/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/q/c/BfBdLTT9ijNB83uJ3zIw/dragon-ball-z-kakarot-2-milhoes-vendas.jpg">
+<img id="opaco2" onmouseleave="Opacidade('opaco2')" onmouseenter="Opacidade1('opaco2')" src="https://s2.glbimg.com/-XjvDP2oKIEio-rPzmG7kGECm1Q=/0x0:695x390/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/q/c/BfBdLTT9ijNB83uJ3zIw/dragon-ball-z-kakarot-2-milhoes-vendas.jpg" class="icone">
 </a>
 </div>
 </div>
@@ -97,13 +101,16 @@
 <br>
 <div class="row">
 <div class="col-sm-4">
-<a href="https://s2.glbimg.com/NaiEkFAnG5StUAz2QEUsohGTTD8=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/N/9/B80vpJReOVtWsCQbAAnA/fall-guys-beta-preview-the-squad.jpg"><img src="https://s2.glbimg.com/NaiEkFAnG5StUAz2QEUsohGTTD8=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/N/9/B80vpJReOVtWsCQbAAnA/fall-guys-beta-preview-the-squad.jpg" class="icone" >
+<a href="https://s2.glbimg.com/NaiEkFAnG5StUAz2QEUsohGTTD8=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/N/9/B80vpJReOVtWsCQbAAnA/fall-guys-beta-preview-the-squad.jpg">
+<img id="opaco3" onmouseleave="Opacidade('opaco3')" onmouseenter="Opacidade1('opaco3')" src="https://s2.glbimg.com/NaiEkFAnG5StUAz2QEUsohGTTD8=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/N/9/B80vpJReOVtWsCQbAAnA/fall-guys-beta-preview-the-squad.jpg" class="icone" >
 </div>
 <div class="col-sm-4">
-<a href="https://uploads.jovemnerd.com.br/wp-content/uploads/2020/08/fall-guys-review.jpg"><img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2020/08/fall-guys-review.jpg" class="icone">
+<a href="https://uploads.jovemnerd.com.br/wp-content/uploads/2020/08/fall-guys-review.jpg">
+<img id="opaco4" onmouseleave="Opacidade('opaco4')" onmouseenter="Opacidade1('opaco4')" src="https://uploads.jovemnerd.com.br/wp-content/uploads/2020/08/fall-guys-review.jpg" class="icone">
 </div>
 <div class="col-sm-4">
-<a href="https://sm.ign.com/t/ign_br/screenshot/default/fall-guys-ultimate-knockout-screenshot-04-ps4-04may20-en-us_udvr.h960.jpg"><img src="https://sm.ign.com/t/ign_br/screenshot/default/fall-guys-ultimate-knockout-screenshot-04-ps4-04may20-en-us_udvr.h960.jpg" class="icone">
+<a href="https://sm.ign.com/t/ign_br/screenshot/default/fall-guys-ultimate-knockout-screenshot-04-ps4-04may20-en-us_udvr.h960.jpg">
+<img id="opaco5" onmouseleave="Opacidade('opaco5')" onmouseenter="Opacidade1('opaco5')" src="https://sm.ign.com/t/ign_br/screenshot/default/fall-guys-ultimate-knockout-screenshot-04-ps4-04may20-en-us_udvr.h960.jpg" class="icone">
 </a>
 </div>
 </div>
@@ -115,13 +122,16 @@
 <br>
 <div class="row">
 <div class="col-sm-4">
-<a href="https://store-images.s-microsoft.com/image/apps.49771.68672594993004535.abb7a42a-f75b-44f2-8afd-204cb3d19eb6.df63910d-755c-40d4-90c0-95d214d3ccd9?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"><img src="https://store-images.s-microsoft.com/image/apps.49771.68672594993004535.abb7a42a-f75b-44f2-8afd-204cb3d19eb6.df63910d-755c-40d4-90c0-95d214d3ccd9?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF" class="icone" >
+<a href="https://store-images.s-microsoft.com/image/apps.49771.68672594993004535.abb7a42a-f75b-44f2-8afd-204cb3d19eb6.df63910d-755c-40d4-90c0-95d214d3ccd9?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF">
+<img id="opaco6" onmouseleave="Opacidade('opaco6')" onmouseenter="Opacidade1('opaco6')" src="https://store-images.s-microsoft.com/image/apps.49771.68672594993004535.abb7a42a-f75b-44f2-8afd-204cb3d19eb6.df63910d-755c-40d4-90c0-95d214d3ccd9?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF" class="icone" >
 </div>
 <div class="col-sm-4">
-<a href="https://http2.mlstatic.com/videojuego-ark-survival-evolved-nintendo-switch-D_NQ_NP_803445-MCO40155842799_122019-F.jpg"><img src="https://http2.mlstatic.com/videojuego-ark-survival-evolved-nintendo-switch-D_NQ_NP_803445-MCO40155842799_122019-F.jpg" class="icone">
+<a href="https://http2.mlstatic.com/videojuego-ark-survival-evolved-nintendo-switch-D_NQ_NP_803445-MCO40155842799_122019-F.jpg">
+<img id="opaco7" onmouseleave="Opacidade('opaco7')" onmouseenter="Opacidade1('opaco7')" src="https://http2.mlstatic.com/videojuego-ark-survival-evolved-nintendo-switch-D_NQ_NP_803445-MCO40155842799_122019-F.jpg" class="icone">
 </div>
 <div class="col-sm-4">
-<a href="https://lh3.googleusercontent.com/9jL14j5ybIg7aZwZXn-ZxUcID-mjj4ofxyxfDaTz4X_t9A610-YZYtXSVwzWLYzK-IM"><img src="https://lh3.googleusercontent.com/9jL14j5ybIg7aZwZXn-ZxUcID-mjj4ofxyxfDaTz4X_t9A610-YZYtXSVwzWLYzK-IM" class="icone">
+<a href="https://lh3.googleusercontent.com/9jL14j5ybIg7aZwZXn-ZxUcID-mjj4ofxyxfDaTz4X_t9A610-YZYtXSVwzWLYzK-IM">
+<img id="opaco8" onmouseleave="Opacidade('opaco8')" onmouseenter="Opacidade1('opaco8')" src="https://lh3.googleusercontent.com/9jL14j5ybIg7aZwZXn-ZxUcID-mjj4ofxyxfDaTz4X_t9A610-YZYtXSVwzWLYzK-IM" class="icone">
 </a>
 </div>
 </div>
@@ -133,13 +143,16 @@
 <br>
 <div class="row">
 <div class="col-sm-4">
-<a href="https://assets.nuuvem.com/image/upload/t_screenshot_full/v1/products/58d2e937216248631300029f/screenshots/pczwwzxdy3kl8yuyqbmk.jpg"><img src="https://assets.nuuvem.com/image/upload/t_screenshot_full/v1/products/58d2e937216248631300029f/screenshots/pczwwzxdy3kl8yuyqbmk.jpg" class="icone" >
+<a href="https://assets.nuuvem.com/image/upload/t_screenshot_full/v1/products/58d2e937216248631300029f/screenshots/pczwwzxdy3kl8yuyqbmk.jpg">
+<img id="opaco9" onmouseleave="Opacidade('opaco9')" onmouseenter="Opacidade1('opaco9')" src="https://assets.nuuvem.com/image/upload/t_screenshot_full/v1/products/58d2e937216248631300029f/screenshots/pczwwzxdy3kl8yuyqbmk.jpg" class="icone" >
 </div>
 <div class="col-sm-4">
-<a href="https://www.conanexiles.com/wp-content/uploads/sites/5/2020/03/N2.jpg"><img src="https://www.conanexiles.com/wp-content/uploads/sites/5/2020/03/N2.jpg" class="icone">
+<a href="https://www.conanexiles.com/wp-content/uploads/sites/5/2020/03/N2.jpg">
+<img id="opacoa" onmouseleave="Opacidade('opacoa')" onmouseenter="Opacidade1('opacoa')" src="https://www.conanexiles.com/wp-content/uploads/sites/5/2020/03/N2.jpg" class="icone">
 </div>
 <div class="col-sm-4">
-<a href="https://store-images.s-microsoft.com/image/apps.14155.14564559340763346.2cba37dd-8151-4f14-8347-966aa40c6964.c5f7b007-97a0-4a4d-80a6-014cdf91e818?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF"><img src="https://store-images.s-microsoft.com/image/apps.14155.14564559340763346.2cba37dd-8151-4f14-8347-966aa40c6964.c5f7b007-97a0-4a4d-80a6-014cdf91e818?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF" class="icone">
+<a href="https://store-images.s-microsoft.com/image/apps.14155.14564559340763346.2cba37dd-8151-4f14-8347-966aa40c6964.c5f7b007-97a0-4a4d-80a6-014cdf91e818?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF">
+<img id="opacow" onmouseleave="Opacidade('opacow')" onmouseenter="Opacidade1('opacow')" src="https://store-images.s-microsoft.com/image/apps.14155.14564559340763346.2cba37dd-8151-4f14-8347-966aa40c6964.c5f7b007-97a0-4a4d-80a6-014cdf91e818?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF" class="icone">
 </a>
 </div>
 </div>
@@ -150,14 +163,16 @@
 <br>
 <div class="row">
 <div class="col-sm-4">
-<a href="https://psxbrasil.com.br/wp-content/uploads/2020/08/EfK_kXgVoAAPCgO.jpg"><img src="https://psxbrasil.com.br/wp-content/uploads/2020/08/EfK_kXgVoAAPCgO.jpg" class="icone" >
+<a href="https://psxbrasil.com.br/wp-content/uploads/2020/08/EfK_kXgVoAAPCgO.jpg">
+<img id="opacod" onmouseleave="Opacidade('opacod')" onmouseenter="Opacidade1('opacod')" src="https://psxbrasil.com.br/wp-content/uploads/2020/08/EfK_kXgVoAAPCgO.jpg" class="icone" >
 </div>
 <div class="col-sm-4">
 <a href="https://d2skuhm0vrry40.cloudfront.net/2019/articles/2019-04-23-12-46/mortal-kombat-11-lista-com-todas-as-personagens-1556019994582.jpg/EG11/resize/1200x-1/mortal-kombat-11-lista-com-todas-as-personagens-1556019994582.jpg">
-<img src="https://d2skuhm0vrry40.cloudfront.net/2019/articles/2019-04-23-12-46/mortal-kombat-11-lista-com-todas-as-personagens-1556019994582.jpg/EG11/resize/1200x-1/mortal-kombat-11-lista-com-todas-as-personagens-1556019994582.jpg" class="icone">
+<img id="opacox" onmouseleave="Opacidade('opacox')" onmouseenter="Opacidade1('opacox')" src="https://d2skuhm0vrry40.cloudfront.net/2019/articles/2019-04-23-12-46/mortal-kombat-11-lista-com-todas-as-personagens-1556019994582.jpg/EG11/resize/1200x-1/mortal-kombat-11-lista-com-todas-as-personagens-1556019994582.jpg" class="icone">
 </div>
 <div class="col-sm-4">
-<a href="https://ops5.com.br/wp-content/uploads/2019/08/Com-Coringa-e-Exterminador-do-Futuro-Mortal-Kombat-11-lanca-trailer-com-os-novos-personagens.jpg"><img src="https://ops5.com.br/wp-content/uploads/2019/08/Com-Coringa-e-Exterminador-do-Futuro-Mortal-Kombat-11-lanca-trailer-com-os-novos-personagens.jpg" class="icone">
+<a href="https://ops5.com.br/wp-content/uploads/2019/08/Com-Coringa-e-Exterminador-do-Futuro-Mortal-Kombat-11-lanca-trailer-com-os-novos-personagens.jpg">
+<img id="opacol" onmouseleave="Opacidade('opacol')" onmouseenter="Opacidade1('opacol')" src="https://ops5.com.br/wp-content/uploads/2019/08/Com-Coringa-e-Exterminador-do-Futuro-Mortal-Kombat-11-lanca-trailer-com-os-novos-personagens.jpg" class="icone">
 </a>
 </div>
 </div>
